@@ -1,0 +1,28 @@
+{
+  "name": "connect-redux-typescript",
+  "version": "0.0.1",
+  "description": "Typings and helper for connect function of redux",
+  "main": "dist/index.js",
+  "types": "src/connect.ts",
+  "scripts": {
+    "build": "webpack",
+    "prepublish": "webpack -p"
+  },
+  "keywords": [
+    "redux",
+    "connect",
+    "typescript",
+    "react"
+  ],
+  "author": "Tolstikov Vladimir",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^15.0.0",
+    "@types/react-redux": "^5.0.0"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.4.1",
+    "typescript": "^2.6.2",
+    "webpack": "^3.9.1"
+  }
+}
