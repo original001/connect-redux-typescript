@@ -16,7 +16,7 @@
   ],
   "author": "Tolstikov Vladimir",
   "license": "ISC",
-  "dependencies": {
+  "peerDependencies": {
     "@types/react": "^15.0.0",
     "@types/react-redux": "^5.0.0"
   },
