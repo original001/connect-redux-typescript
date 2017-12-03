@@ -1,6 +1,0 @@
-improve README
- - description of State
- - connect using
- - notes about own Props and returning async actions
- - fix duplicate numbers
-remove useCache from loader
