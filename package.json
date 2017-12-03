@@ -1,8 +1,8 @@
 {
   "name": "connect-redux-typescript",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Typings and helper for connect function of redux",
-  "repository" : "original001/connect-redux-typescript",
+  "repository": "original001/connect-redux-typescript",
   "main": "dist/index.js",
   "types": "src/connect.ts",
   "scripts": {
