@@ -21,14 +21,14 @@ interface ConnectHelperFunction<TState> {
 interface ConnectHelperFunction<TState> {
   <TStateProps, TOwnProps>(
     mapStateToProps: MapStateToProps<TStateProps, TOwnProps, TState>,
-  ): ConnectHelper<DispatchProp<TState>, TOwnProps>;
+  ): ConnectHelper<TStateProps & DispatchProp<TState>, TOwnProps>;
 }
 
 interface ConnectHelperFunction<TState> {
   <TStateProps, TDispatchProps, TOwnProps>(
     mapStateToProps: MapStateToProps<TStateProps, TOwnProps, TState>,
     mapDispatchToProps: Func<TDispatchProps> | TDispatchProps,
-  ): ConnectHelper<TStateProps & TDispatchProps, TOwnProps>;
+  ): ConnectHelper<TStateProps & TDispatchProps & DispatchProp<TState>, TOwnProps>;
 }
 
 export const connectHelperInit = <TState>(connect: Connect): ConnectHelperFunction<TState> =>
