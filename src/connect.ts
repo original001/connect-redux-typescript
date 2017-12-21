@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Connect, DispatchProp} from 'react-redux';
+import {DispatchProp} from 'react-redux';
 
 interface Func<T> {
   ([...args]: any): T;
@@ -31,7 +31,7 @@ interface ConnectHelperFunction<TState> {
   ): ConnectHelper<TStateProps & TDispatchProps & DispatchProp<TState>, TOwnProps>;
 }
 
-export const connectHelperInit = <TState>(connect: Connect): ConnectHelperFunction<TState> =>
+export const connectHelperInit = <TState>(connect): ConnectHelperFunction<TState> =>
   (mapStateToProps?, mapDispatchToProps?) => {
     return {
       propsGeneric: null,
