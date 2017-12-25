@@ -28,7 +28,7 @@ interface ConnectHelperFunction<TState> {
   <TStateProps, TDispatchProps, TOwnProps>(
     mapStateToProps: MapStateToProps<TStateProps, TOwnProps, TState>,
     mapDispatchToProps: Func<TDispatchProps> | TDispatchProps,
-  ): ConnectHelper<TStateProps & TDispatchProps & DispatchProp<TState>, TOwnProps>;
+  ): ConnectHelper<TStateProps & TDispatchProps, TOwnProps>;
 }
 
 export const connectHelperInit = <TState>(connect): ConnectHelperFunction<TState> =>
