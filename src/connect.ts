@@ -6,7 +6,7 @@ interface Func<T> {
 }
 
 interface MapStateToProps<TStateProps, TOwnProps, TState> {
-  (state: TState, ownProps?: TOwnProps): TStateProps;
+  (state: TState, ownProps?: TOwnProps):   TStateProps | ((state: TState) => TStateProps);
 }
 
 interface ConnectHelper<TProps, TOwnProps> {
